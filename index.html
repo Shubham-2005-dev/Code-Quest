@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Quest 2025</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('apple.png');
+      color: white;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .venue {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .venue h1 {
+      font-size: 2.5em;
+    }
+
+    .venue h2 {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    .venue p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .line {
+      width: 50px;
+      height: 3px;
+      background-color: white;
+      margin: 0 auto 30px auto;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 340px;
+      height:400px;
+      box-shadow: 0 0 20px #4fc3f7;
+      border: 2px solid #4fc3f7;
+      transition: 0.3s ease;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card ul li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+    }
+
+    .rules-section {
+      margin-top: 80px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .rules-section h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .rules-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rules-column {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+  border-left: 2px solid white; /* This creates a side (vertical) line */
+}
+
+/* Optional: Remove the left border from the first column */
+.rules-column:first-child {
+  border-left: none;
+}
+
+    .rule-box {
+      flex: 1;
+      min-width: 280px;
+      padding: 25px;
+      border-left: 2px solid white;
+    }
+
+    .rule-box:first-child {
+      border-left: none;
+    }
+
+    .rule-box h3 {
+      margin-top: 0;
+      font-size: 1.4em;
+      margin-bottom: 15px;
+    }
+
+    .rule-box ul {
+      padding-left: 20px;
+    }
+
+    .rule-box li {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+    .register-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .register-section h1 {
+      font-size: 2.8em;
+      margin-bottom: 30px;
+    }
+
+    .register-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .register-form input {
+      width: 300px;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1em;
+      background-color: #cccccc;
+      color: #333;
+    }
+
+    .register-form button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .contact-section {
+      background-color: #102a43;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 1.1em;
+    }
+
+    .contact-section h2 {
+      margin-bottom: 15px;
+    }
+
+    .contact-section p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#rules">Rules & Eligibility</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1>Code Quest</h1>
+      <h2>2025</h2>
+      <p>CodeQuest 2025 is an exciting 48-hour hackathon where developers,
+        designers, and innovators from all over the world come together to
+        solve real-world challenges using cutting-edge technology. Whether
+        you're a seasoned pro or a first-time hacker, CodeQuest provides a
+        platform for creativity, collaboration, and building projects that can
+        make an impact. Teams will work on solving problems in Al, web
+        development, sustainability, and more, with opportunities to
+        network, learn, and win amazing prizes.</p>
+    </section>
+
+    <section id="venue" class="venue">
+      <h1>Venue Details</h1>
+      <h2>The Kolkata Innovation Hub</h2>
+      <p>Address: 45/2, Park Street, Kolkata, West Bengal 700016, India</p>
+      <p>Date: July 15–17, 2025</p>
+      <p>Registration Fee: ₹500 per team</p>
+    </section>
+
+    <section id="schedule">
+      <h1>Schedule Overview</h1>
+      <div class="line"></div>
+      <div class="container">
+        <div class="card">
+          <h3><strong>Day 1: July 15, 2025</strong></h3>
+          <ul>
+            <li>Registration & Breakfast</li>
+            <li>Opening Ceremony & Welcome</li>
+            <li>Team Formation & Idea Pitches</li>
+            <li>Hacking Begins</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><strong>Day 2: July 16, 2025</strong></h3>
+          <ul>
+            <li>Registration & Breakfast</li>
+            <li>Opening Ceremony & Welcome</li>
+            <li>Team Formation & Idea Pitches</li>
+            <li>Hacking Begins</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><strong>Day 3: July 17, 2025</strong></h3>
+          <ul>
+            <li>Registration & Breakfast</li>
+            <li>Opening Ceremony & Welcome</li>
+            <li>Team Formation & Idea Pitches</li>
+            <li>Hacking Begins</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules" class="rules-section">
+      <h1>Rules and Eligibility</h1>
+      <div class="rules-columns">
+        <div class="rule-box">
+          <h3>Eligibility Criteria:</h3>
+          <ul>
+            <li>The hackathon is open to participants of all skill levels (beginner, intermediate, and expert).</li>
+            <li>Participants must be 18 years or older.</li>
+            <li>Teams can consist of 1 to 4 members.</li>
+            <li>Each participant must register individually.</li>
+          </ul>
+        </div>
+        <div class="rule-box">
+          <h3>Project Requirements:</h3>
+          <ul>
+            <li>All projects must be built from scratch during the hackathon.</li>
+            <li>The project must be related to the theme announced during the opening ceremony.</li>
+            <li>Teams must submit their final project before the submission deadline.</li>
+          </ul>
+        </div>
+        <div class="rule-box">
+          <h3>Code of Conduct:</h3>
+          <ul>
+            <li><strong>Respect:</strong> All participants must show respect to others.</li>
+            <li><strong>Collaboration:</strong> Collaboration is encouraged but plagiarism is not allowed.</li>
+            <li><strong>No offensive content:</strong> Projects must not contain inappropriate content.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="register-section">
+        <h1>REGISTER</h1>
+        <form class="register-form">
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Contact" required />
+          <input type="text" placeholder="Address" required />
+          <button type="submit">SUBMIT</button>
+        </form>
+      </section>
+    
+      <section class="contact-section">
+        <h2>Contact us</h2>
+        <p>Put Contact information here</p>
+        <p>Put Contact information here</p>
+      </section>
+    
+  </main>
+</body>
+</html>
