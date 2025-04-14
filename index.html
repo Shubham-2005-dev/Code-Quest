@@ -6,132 +6,143 @@
   <title>Code Quest 2025</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('apple.png');
-      color: white;
-    }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('apple.png');
+  color: white;
+  cursor: url('star.png') 16 16 , auto; /* Custom cursor */
+}
 
-    header {
-      background-color: #ffffff;
-      padding: 10px 0;
-    }
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
 
-    nav ul li {
-      margin: 0 15px;
-    }
+nav ul li {
+  margin: 0 15px;
+}
 
-    nav ul li a {
-      text-decoration: none;
-      color: #000000;
-      font-weight: bold;
-    }
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
 
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: url('background.jpg') no-repeat center center;
-      background-size: cover;
-    }
+nav ul li a:hover {
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Glowing effect */
+}
 
-    .hero h1 {
-      font-size: 3em;
-      margin: 0;
-    }
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('background.jpg') no-repeat center center;
+  background-size: cover;
+}
 
-    .hero h2 {
-      font-size: 2em;
-      margin: 10px 0;
-    }
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
 
-    .hero p {
-      font-size: 1.2em;
-      max-width: 800px;
-      margin: 20px auto;
-    }
+.hero h2 {
+  font-size: 2em;
+  margin: 10px 0;
+}
 
-    .venue {
-      text-align: center;
-      padding: 50px 20px;
-    }
+.hero p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 20px auto;
+}
 
-    .venue h1 {
-      font-size: 2.5em;
-    }
+.venue {
+  text-align: center;
+  padding: 50px 20px;
+}
 
-    .venue h2 {
-      font-size: 2em;
-      margin: 10px 0;
-    }
+.venue h1 {
+  font-size: 2.5em;
+}
 
-    .venue p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 10px auto;
-    }
+.venue h2 {
+  font-size: 2em;
+  margin: 10px 0;
+}
 
-    h1 {
-      font-size: 3.5em;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+.venue p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 10px auto;
+}
 
-    .line {
-      width: 50px;
-      height: 3px;
-      background-color: white;
-      margin: 0 auto 30px auto;
-    }
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .container {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+.line {
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  margin: 0 auto 30px auto;
+}
 
-    .card {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 30px;
-      width: 340px;
-      height:400px;
-      box-shadow: 0 0 20px #4fc3f7;
-      border: 2px solid #4fc3f7;
-      transition: 0.3s ease;
-    }
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 1.3em;
-    }
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  height: 400px;
+  box-shadow: 0 0 20px #4fc3f7;
+  border: 2px solid #4fc3f7;
+  transition: 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
 
-    .card ul {
-      padding-left: 20px;
-    }
+.card:hover {
+  box-shadow: 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow; /* Glowing effect */
+}
 
-    .card ul li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-    }
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
 
-    .rules-section {
-      margin-top: 80px;
-      width: 90%;
-      max-width: 1200px;
-    }
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 12px;
+  font-size: 1.05em;
+}
+
+.rules-section {
+  margin-top: 80px;
+  width: 90%;
+  max-width: 1200px;
+}
+
 
     .rules-section h1 {
       text-align: center;
@@ -158,83 +169,90 @@
   border-left: none;
 }
 
-    .rule-box {
-      flex: 1;
-      min-width: 280px;
-      padding: 25px;
-      border-left: 2px solid white;
-    }
+.rule-box {
+  flex: 1;
+  min-width: 280px;
+  padding: 25px;
+  border-left: 2px solid white;
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
 
-    .rule-box:first-child {
-      border-left: none;
-    }
+.rule-box:first-child {
+  border-left: none;
+}
 
-    .rule-box h3 {
-      margin-top: 0;
-      font-size: 1.4em;
-      margin-bottom: 15px;
-    }
+.rule-box h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
 
-    .rule-box ul {
-      padding-left: 20px;
-    }
+.rule-box ul {
+  padding-left: 20px;
+}
 
-    .rule-box li {
-      margin-bottom: 10px;
-      font-size: 1em;
-    }
-    .register-section {
-      text-align: center;
-      padding: 60px 20px;
-    }
+.rule-box li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
 
-    .register-section h1 {
-      font-size: 2.8em;
-      margin-bottom: 30px;
-    }
+.rule-box:hover {
+  box-shadow: 0 0 20px yellow, 0 0 30px yellow; /* Glowing effect on hover */
+}
 
-    .register-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
+.register-section {
+  text-align: center;
+  padding: 60px 20px;
+}
 
-    .register-form input {
-      width: 300px;
-      padding: 12px;
-      border-radius: 10px;
-      border: none;
-      font-size: 1em;
-      background-color: #cccccc;
-      color: #333;
-    }
+.register-section h1 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+}
 
-    .register-form button {
-      padding: 10px 25px;
-      border: none;
-      border-radius: 10px;
-      background-color: white;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 1em;
-    }
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
-    .contact-section {
-      background-color: #102a43;
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 1.1em;
-    }
+.register-form input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  background-color: #cccccc;
+  color: #333;
+}
 
-    .contact-section h2 {
-      margin-bottom: 15px;
-    }
+.register-form button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
 
-    .contact-section p {
-      margin: 5px 0;
-    }
+.contact-section {
+  background-color: #102a43;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 1.1em;
+}
+
+.contact-section h2 {
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  margin: 5px 0;
+}
+    
   </style>
 </head>
 <body>
